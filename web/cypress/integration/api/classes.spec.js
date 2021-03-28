@@ -25,7 +25,7 @@ context('Classe endpoint', () => {
 
             expect(response.status).to.eq(201)
             expect(response.statusText).to.eq('Created')
-            expect(response.duration).lessThan(10)
+            expect(response.duration).lessThan(60)
 
             expect(response.body[0])
                 .to.have.property('class_id')
