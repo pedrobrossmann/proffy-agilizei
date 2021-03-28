@@ -24,7 +24,7 @@ jobs:
         working-directory: web
         install: false
         start: npm run start:ci
-        wait-on: 'http://localost:3000'
+        wait-on: 'http://localhost:3000'
         
      - name: Upload Screenshots
        uses: actions/upload-artifact@v2.2.2
