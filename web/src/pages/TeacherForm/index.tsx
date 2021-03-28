@@ -135,7 +135,7 @@ function TeacherForm(): ReactElement {
           <fieldset>
             <legend>
               Horários Disponíveis
-              <button onClick={addNewScheduleItem} type="button">+ Novo Horário</button>
+              <button onClick={addNewScheduleItem} data-cy="add_new_schedule" type="button">+ Novo Horário</button>
             </legend>
             {scheduleItems.map((scheduleItem, index) => {
               return (
@@ -184,7 +184,7 @@ function TeacherForm(): ReactElement {
               <br />
               Preencha todos os dados
             </p>
-            <button type="submit">
+            <button data-cy="btn-register-professional" type="submit">
               Salvar Cadastro
             </button>
           </footer>
